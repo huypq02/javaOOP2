@@ -5,17 +5,19 @@ import vn.edu.cybersoft.pkg.utils;
 import java.util.List;
 import java.util.Objects;
 
-import static vn.edu.cybersoft.pkg.utils;
 
 public class Number {
     private List<Integer> numberArr;
     private List<Double> dNumberArr;
+    private double tienGui;
+    private double laiSuat;
+    private int thangGui;
 
     // 1. tinh tong cac phan tu le trong mang
     public int sumOddNumber(List<Integer> arr) {
         int sum = 0;
         for (int i = 0; i < arr.size(); i++) {
-            if (!utils.isOdd(arr.get(i))) {
+            if (utils.isOdd(arr.get(i))) {
                 sum += arr.get(i);
             }
         }
@@ -62,7 +64,7 @@ public class Number {
         }
         return count;
     }
-    // 4.3 dem so luong so 0
+    // 4.3 dem so luong so 0 or tai su dung lai 2. dem so lan xuat hien cua 1 phan tu trong mang
     public int countZero(List<Double> arr, double x) {
         int count = 0;
         for (int i = 0; i < arr.size(); i++) {
@@ -74,12 +76,19 @@ public class Number {
     }
 
     // 5.1 them gia tri
-    public void addNumber(List<Integer> arr, int x) {
+    public void addNumber(List<Double> arr, double x) {
         arr.add(x);
     }
     // 5.2 xoa gia tri, su dung lai 3. xoa 1 phan tu khoi cac mang so nguyen
+    public void removeNumber(List<Double> arr, double x) {
+        for (int i = 0; i < arr.size(); i++) {
+            if (arr.get(i) == x) {
+                arr.remove(i);
+            }
+        }
+    }
     // 5.3 cap nhat gia tri
-    public void updateNumber(List<Integer> arr, int x, int y) {
+    public void updateNumber(List<Double> arr, double x, double y) {
         for (int i = 0; i < arr.size(); i++) {
             if (arr.get(i) == x) {
                 arr.set(i, y);
@@ -112,11 +121,11 @@ public class Number {
                 }
             }
         }
-        System.out.println("Mang con lai: " + arr);
+        System.out.println("Mang con lai sau khi xoa trung lap: " + arr);
     }
 
     // 9 viet chuong trinh dem so luong phan trong mang lon hon mot gia tri cho truoc
-    public int countGreaterThan(List<Integer> arr, int x){
+    public int countGreaterThan(List<Double> arr, double x){
         int count = 0;
         for (int i = 0; i < arr.size(); i++){
             if (arr.get(i) > x){
@@ -127,10 +136,10 @@ public class Number {
     }
 
     // 10 viet chuong trinh tinh tong cac so nguyen to nho n trong mang cho truoc
-    public int sumPrimeNumber(List<Integer> arr){
+    public int sumPrimeNumber(List<Integer> arr, int n){
         int sum = 0;
         for (int i = 0; i < arr.size(); i++){
-            if (utils.isPrime(arr.get(i))){
+            if (utils.isPrime(arr.get(i)) && arr.get(i) < n){
                 sum += arr.get(i);
             }
         }
@@ -153,5 +162,29 @@ public class Number {
 
     public void setdNumberArr(List<Double> dNumberArr) {
         this.dNumberArr = dNumberArr;
+    }
+
+    public double getTienGui() {
+        return tienGui;
+    }
+
+    public void setTienGui(double tienGui) {
+        this.tienGui = tienGui;
+    }
+
+    public int getThangGui() {
+        return thangGui;
+    }
+
+    public void setThangGui(int thangGui) {
+        this.thangGui = thangGui;
+    }
+
+    public double getLaiSuat() {
+        return laiSuat;
+    }
+
+    public void setLaiSuat(double laiSuat) {
+        this.laiSuat = laiSuat;
     }
 }
