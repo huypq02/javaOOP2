@@ -8,43 +8,43 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         try {
-//            Number n1 = new Number();
-//            nhapSoNguyen(n1);
-//            System.out.println("Tong cac phan tu le trong mang: " + n1.sumOddNumber(n1.getNumberArr()));
-//
-//            System.out.println("-------------------------");
-//            Number n2 = new Number();
-//            nhapSo(n2);
-//            double x = nhapX();
-//            System.out.println("So lan xuat hien cua " + x + " trong mang: " + n2.countNumber(n2.getdNumberArr(), x));
-//
-//            System.out.println("-------------------------");
-//            Number n3 = new Number();
-//            nhapSoNguyen(n3);
-//            System.out.println("Nhap phan tu can xoa: ");
-//            int remove = nhapN();
-//            n3.removeNumber(n3.getNumberArr(), remove);
-//            System.out.println("Mang sau khi xoa " + remove + ": " + n3.getNumberArr());
-//
-//            System.out.println("-------------------------");
-//            Number n4 = new Number();
-//            nhapSo(n4);
-//            double x2 = nhapX();
-//            System.out.println("So luong so am trong mang: " + n4.countNegative(n4.getdNumberArr(), x2));
-//            System.out.println("So luong so duong trong mang: " + n4.countPositive(n4.getdNumberArr(), x2));
-//            System.out.println("So luong so 0 trong mang: " + n4.countNumber(n4.getdNumberArr(), 0));
-//
-//            System.out.println("-------------------------");
-//            Number n5 = new Number();
-//            nhapSo(n5);
-//            themXoaSuaMang(n5);
-//            System.out.println("Mang sau khi them/xoa/sua: " + n5.getdNumberArr());
-//
-//            System.out.println("-------------------------");
-//            Number n6 = new Number();
-//            nhapChuongTrinhLaiSuat(n6);
-//            System.out.println("So tien nhan duoc sau " + n6.getThangGui() + " thang la: "
-//                    + n6.simpleInterest(n6.getTienGui(), n6.getLaiSuat(), n6.getThangGui()));
+            Number n1 = new Number();
+            nhapSoNguyen(n1);
+            System.out.println("Tong cac phan tu le trong mang: " + n1.sumOddNumber(n1.getNumberArr()));
+
+            System.out.println("-------------------------");
+            Number n2 = new Number();
+            nhapSo(n2);
+            double x = nhapX();
+            System.out.println("So lan xuat hien cua " + x + " trong mang: " + n2.countNumber(n2.getdNumberArr(), x));
+
+            System.out.println("-------------------------");
+            Number n3 = new Number();
+            nhapSoNguyen(n3);
+            System.out.println("Nhap phan tu can xoa: ");
+            int remove = nhapN();
+            n3.removeNumber(n3.getNumberArr(), remove);
+            System.out.println("Mang sau khi xoa " + remove + ": " + n3.getNumberArr());
+
+            System.out.println("-------------------------");
+            Number n4 = new Number();
+            nhapSo(n4);
+            double x2 = nhapX();
+            System.out.println("So luong so am trong mang: " + n4.countNegative(n4.getdNumberArr(), x2));
+            System.out.println("So luong so duong trong mang: " + n4.countPositive(n4.getdNumberArr(), x2));
+            System.out.println("So luong so 0 trong mang: " + n4.countNumber(n4.getdNumberArr(), 0));
+
+            System.out.println("-------------------------");
+            Number n5 = new Number();
+            nhapSo(n5);
+            themXoaSuaMang(n5);
+            System.out.println("Mang sau khi them/xoa/sua: " + n5.getdNumberArr());
+
+            System.out.println("-------------------------");
+            Number n6 = new Number();
+            nhapChuongTrinhLaiSuat(n6);
+            System.out.println("So tien nhan duoc sau " + n6.getThangGui() + " thang la: "
+                    + n6.simpleInterest(n6.getTienGui(), n6.getLaiSuat(), n6.getThangGui()));
 
             System.out.println("-------------------------");
             Number n7 = new Number();
